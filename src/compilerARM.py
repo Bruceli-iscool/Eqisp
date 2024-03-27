@@ -6,8 +6,8 @@ class CodeGenerator:
 
     def generate_code(self, ast):
         self.asm.append(".text")
-        self.asm.append(".global _start")
-        self.asm.append("_start:")
+        self.asm.append(".global _main")
+        self.asm.append("_main:")
         self.asm.append("    mov x29, sp")  # Set up the frame pointer
         self.traverse_ast(ast)
         self.asm.append("    mov x0, x1")  # Move the result to x0 (convention for exit syscall)

@@ -1,7 +1,7 @@
 .text
-.global _start
+.global _main
 
-_start:
+_main:
     mov x29, sp
     mov x0, #1
     str x0, [sp, #-8]!
