@@ -31,4 +31,3 @@ def visualize_ast(node, indent=0):
     visualize_ast(node.left, indent + 2)
     visualize_ast(node.right, indent + 2)
 
-visualize_ast(parse("[('INTEGER', 1), ('OPERATOR', '+')]"))

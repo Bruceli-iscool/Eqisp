@@ -1,6 +1,3 @@
-# the code is not that difficult
-# However, debuging may be hard do to the fact
-# this is in assembly 
 # Note that this implementation is for x64. ARM users refer to the compilerARM.py file
 class CodeGenerator:
     def __init__(self):
